@@ -1,17 +1,20 @@
 body {
 	width: 300px;
-	height: 300px;
+	height: auto;
 	background-color: grey;
-	display: flex;
-	justify-content: center;
 }
 
-p {
-	display: inner-flex;
+.body-text {
 	margin: auto 10px;
-	font-size: 22px;
+	font-size: 16px;
 	color: black;
 	border-radius: 6px;
 	border: 1px solid lightblue;
 	padding: 10px;
+	position: relative;
+}
+
+.encryption-section {
+	margin-top: 4px;
+	position: relative;
 }
