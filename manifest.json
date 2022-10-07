@@ -1,0 +1,13 @@
+{
+	"name": "visual-encryptor",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_icon": "static/images/logo.png"
+	},
+	"icons": {
+		"128": "static/images/logo.png"
+	},
+	"permissions": ["activeTab"]
+}
