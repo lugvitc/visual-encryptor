@@ -1,6 +1,6 @@
 # Contributing to Visual-Encryptor
 
-Thank you for your interest in making Visual-Encryptor better. Before you get started, please review our [Code of Conduct](). This helps us ensure that the community is positive and supportive for everyone involved.
+Thank you for your interest in making Visual-Encryptor better. Before you get started, please review our [Code of Conduct](https://github.com/lugvitc/visual-encryptor/blob/master/CODE_OF_CONDUCT.md). This helps us ensure that the community is positive and supportive for everyone involved.
 
 # Getting started
 
