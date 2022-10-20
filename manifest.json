@@ -1,13 +1,25 @@
 {
-	"name": "visual-encryptor",
-	"version": "0.0.1",
-	"manifest_version": 2,
-	"browser_action": {
-		"default_popup": "popup.html",
-		"default_icon": "static/images/logo.png"
-	},
-	"icons": {
-		"128": "static/images/logo.png"
-	},
-	"permissions": ["activeTab"]
+  "manifest_version": 2,
+  "name": "visual-encrypt",
+  "version": "1.0",
+  "description": "Only solution to encrypt the text in the website",
+  "icons": {
+    "128": "static/images/logo.png"
+  },
+  "page_action": {
+    "default_icon": "static/images/logo.png",
+    "default_popup": "popup.html",
+    "default_title": "Visual Encrypt"
+  },
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["content.js", "jquery-3.1.0.min.js"]
+    }
+  ],
+  "permissions": ["tabs", "https://*/*"]
 }
