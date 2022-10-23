@@ -1,20 +1,56 @@
 body {
 	width: 300px;
 	height: auto;
-	background-color: grey;
+	background-color: var(--c1);
+	--c1: #232931;
+	--c2: #393E46;
+	--c3: #4ECCA3;
+	--c4: #EEEEEE;
 }
 
 .body-text {
-	margin: auto 10px;
+	margin: auto 5px;
 	font-size: 16px;
-	color: black;
-	border-radius: 6px;
-	border: 1px solid lightblue;
-	padding: 10px;
+	color: var(--c4);
+	padding: 0px;
 	position: relative;
 }
 
 .encryption-section {
-	margin-top: 4px;
+	margin: 10px 5px;
 	position: relative;
+	display: grid;
+	row-gap: 3px;
+	column-gap: 3px;
+	font-size: 16px;
+}
+
+.encrypt-button {
+	background-color: var(--c3);
+	border-color: var(--c2);
+	border-style: solid;
+	border-radius: 7px;
+	text-decoration: none;
+	padding: 10px 24px;
+	color: var(--c1);
+}
+
+#b1 {
+	grid-row: 1 / span 1 ;
+	grid-column: 1 / span 1;
+}
+
+#b2 {
+	grid-row: 1 / span 1 ;
+	grid-column: 2 / span 1;
+}
+
+#b3 {
+	grid-row: 2 / span 1 ;
+	grid-column: 1 / span 1;
+}
+
+#b4 {
+	grid-row: 2 / span 1 ;
+	grid-column: 2 / span 1;
 }
