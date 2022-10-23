@@ -1,5 +1,5 @@
 {
-  "name": "visual encryptor",
+  "name": "visual-encryptor",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Only solution to encrypt the text in the website",
@@ -9,7 +9,7 @@
   "page_action": {
     "default_icon": "static/images/logo.png",
     "default_popup": "popup.html",
-    "default_title": "Visual Encrypt"
+    "default_title": "Visual Encryptor"
   },
   "background": {
     "scripts": ["eventPage.js"],
