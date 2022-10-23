@@ -1,7 +1,7 @@
 {
+  "name": "visual-encryptor",
+  "version": "0.0.1",
   "manifest_version": 2,
-  "name": "visual-encrypt",
-  "version": "1.0",
   "description": "Only solution to encrypt the text in the website",
   "icons": {
     "128": "static/images/logo.png"
