@@ -3,7 +3,7 @@ var realContent = [];
 var flag = 0;
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-  if (request.todo === "ceasarEncrypt") {
+  if (request.todo == "ceasarEncrypt") {
     var pArray = document.getElementsByTagName("p");
     for (var i = 0; i < pArray.length; i++) {
       var text = document.getElementsByTagName("p")[i].innerText;
