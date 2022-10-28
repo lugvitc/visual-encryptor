@@ -1,56 +1,67 @@
 body {
-	width: 300px;
-	height: auto;
-	background-color: var(--c1);
-	--c1: #232931;
-	--c2: #393E46;
-	--c3: #4ECCA3;
-	--c4: #EEEEEE;
+  width: 300px;
+  height: auto;
+  background-color: var(--c1);
+  --c1: #232931;
+  --c2: #393e46;
+  --c3: #4ecca3;
+  --c4: #eeeeee;
 }
 
 .body-text {
-	margin: auto 5px;
-	font-size: 16px;
-	color: var(--c4);
-	padding: 0px;
-	position: relative;
+  margin: auto 5px;
+  font-size: 16px;
+  color: var(--c4);
+  padding: 0px;
+  position: relative;
 }
 
 .encryption-section {
-	margin: 10px 5px;
-	position: relative;
-	display: grid;
-	row-gap: 3px;
-	column-gap: 3px;
-	font-size: 16px;
+  margin: 10px 5px;
+  position: relative;
+  display: grid;
+  row-gap: 3px;
+  column-gap: 3px;
+  font-size: 16px;
 }
 
 .encrypt-button {
-	background-color: var(--c3);
-	border-color: var(--c2);
-	border-style: solid;
-	border-radius: 7px;
-	text-decoration: none;
-	padding: 10px 24px;
-	color: var(--c1);
+  background-color: var(--c3);
+  border-color: var(--c2);
+  border-style: solid;
+  border-radius: 7px;
+  text-decoration: none;
+  padding: 10px 24px;
+  color: var(--c1);
+}
+
+.encrypt-button:hover {
+  transition: 0.3s;
+  background-color: var(--c2);
+  color: var(--c4);
+}
+
+.encrypt-button:active {
+  background-color: var(--c1);
+  color: var(--c4);
 }
 
 #b1 {
-	grid-row: 1 / span 1 ;
-	grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
 }
 
 #b2 {
-	grid-row: 1 / span 1 ;
-	grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
 }
 
 #b3 {
-	grid-row: 2 / span 1 ;
-	grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
 }
 
 #b4 {
-	grid-row: 2 / span 1 ;
-	grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
 }
