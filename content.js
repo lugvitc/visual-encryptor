@@ -1,7 +1,9 @@
 chrome.runtime.sendMessage({ todo: "showPageAction" });
+
 var realContent = [];
 var parArray;
 var flag = 0;
+
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.todo == "ceasarEncrypt") {
     pArray = document.getElementsByTagName("p");
@@ -15,6 +17,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     }
     flag = 1;
   }
+
   if (request.todo == "base64") {
     pArray = document.getElementsByTagName("p");
     for (var i = 0; i < pArray.length; i++) {
@@ -27,6 +30,20 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     }
     flag = 1;
   }
+
+  if (request.todo == "Rot13") {
+    pArray = document.getElementsByTagName("p");
+    for (var i = 0; i < pArray.length; i++) {
+      var text = document.getElementsByTagName("p")[i].innerText;
+      if (realContent.length < pArray.length && flag === 0) {
+        realContent.push(text);
+      }
+      var encryptText = rot13(text);
+      document.getElementsByTagName("p")[i].innerText = encryptText;
+    }
+    flag = 1;
+  }
+
   if (request.todo == "reset") {
     for (var i = 0; i < realContent.length; i++) {
       var text = realContent[i];
@@ -59,5 +76,15 @@ function ceaserencrypt(msg, key) {
 }
 
 function base64(msg) {
-  return window.btoa(unescape(encodeURIComponent(msg)));
+  return btoa(msg);
+}
+
+function rot13(msg) {
+  var encMsg = msg;
+  encMsg = encMsg.replace(/[a-zA-Z]/g, function (c) {
+    return String.fromCharCode(
+      (c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26
+    );
+  });
+  return encMsg;
 }

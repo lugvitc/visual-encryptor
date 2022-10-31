@@ -46,22 +46,27 @@ body {
   color: var(--c4);
 }
 
-#b1 {
+#Ceasar {
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
 }
 
-#b2 {
+#Base64 {
   grid-row: 1 / span 1;
   grid-column: 2 / span 1;
 }
 
-#b3 {
+#Gronencrypt {
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
 }
 
-#b4 {
+#ROT {
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
+}
+
+#Reset {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 2;
 }
